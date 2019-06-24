@@ -1,6 +1,9 @@
 :-dynamic progenitor/2.
-progenitor(juan,carlos).
-progenitor(juan,pedro).
-progenitor(juan,marcos).
-progenitor(raul,marcos).
-progenitor(red,ca).
+
+progenitor(veronica,marcos).
+progenitor(veronica,marvery).
+progenitor(veronica,manuela).
+progenitor(carlos,raul).
+progenitor(carlos,laura).
+progenitor(julio,josmery).
+progenitor(julio,jessica).

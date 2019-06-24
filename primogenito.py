@@ -43,6 +43,7 @@ def openwindow(prolog):
         prologfile.close()
 
     def search_children():
+        children_list.delete('1.0', END)
         progenitor = searchfathertxt.get()
         children = list(prolog.query("progenitor(%s ,Child)" % progenitor))
         for child in children:
@@ -50,6 +51,7 @@ def openwindow(prolog):
                 INSERT, child["Child"] + " es descendiente de " + progenitor + "\n")
 
     def search_progenitor():
+        progenitor_list.delete("1.0", END)
         children = searchsontxt.get()
         progenitores = list(prolog.query("progenitor(Progrenitor , %s)" % children))
         for progenitor in progenitores:
